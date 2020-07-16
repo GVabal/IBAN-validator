@@ -8,3 +8,14 @@ Run `out/artifacts/IBAN_validator/IBAN_validator.jar`
 
 ### Interactive Validator
 Simply enter IBAN and if it is potentionally valid, the tick will turn green. Otherwise an error message will notify what could be wrong with it. 
+
+### Batch Validator
+Takes IBANs listed in .txt file and process them in one batch. Output is saved in same location where input was with ".out" extension.
+
+Example input:
+
+![1](https://user-images.githubusercontent.com/49102436/87643203-37c39900-c753-11ea-92de-8784a888ca0b.jpg)
+
+Example output:
+
+![2](https://user-images.githubusercontent.com/49102436/87643324-66417400-c753-11ea-8c4c-dab4ffd8b4bc.jpg)
