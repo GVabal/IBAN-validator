@@ -12,10 +12,10 @@ Simply enter IBAN and if it is potentionally valid, the tick will turn green. Ot
 ### Batch Validator
 Takes IBANs listed in .txt file and process them in one batch. Output is saved in same location where input was with ".out" extension.
 
-Example input:
+Example input: `file.txt`
 
 ![1](https://user-images.githubusercontent.com/49102436/87643203-37c39900-c753-11ea-92de-8784a888ca0b.jpg)
 
-Example output:
+Example output: `file.out.txt`
 
 ![2](https://user-images.githubusercontent.com/49102436/87643324-66417400-c753-11ea-8c4c-dab4ffd8b4bc.jpg)
