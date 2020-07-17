@@ -4,7 +4,7 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.regex.Pattern;
 
-public class IBANCountryValidator {
+public class IBANNumberValidator {
 
     private final Map<String, IBANCountry> IBANCountries = new HashMap<>();
 
@@ -26,7 +26,7 @@ public class IBANCountryValidator {
 //        }
 //    }
 
-    public IBANCountryValidator() {
+    public IBANNumberValidator() {
         List<String> lines = new ArrayList<>();
 
         lines.add("Andorra,AD,24,\\d{4}\\d{4}\\w{12},AD1200012030200359100100,no");

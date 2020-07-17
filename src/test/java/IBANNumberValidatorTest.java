@@ -3,13 +3,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class IBANCountryValidatorTest {
+class IBANNumberValidatorTest {
 
-    static IBANCountryValidator validator;
+    static IBANNumberValidator validator;
 
     @BeforeAll
     static void beforeAll() {
-        validator = new IBANCountryValidator();
+        validator = new IBANNumberValidator();
     }
 
     @Test

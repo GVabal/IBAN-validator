@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 public class Controller {
 
-    IBANCountryValidator validator = new IBANCountryValidator();
+    IBANNumberValidator validator = new IBANNumberValidator();
 
     @FXML
     private TextField filePathField;
