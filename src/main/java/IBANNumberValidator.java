@@ -1,30 +1,14 @@
 import java.math.BigInteger;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 public class IBANNumberValidator {
 
     private final Map<String, IBANCountry> IBANCountries = new HashMap<>();
-
-//    public IBANCountryValidator() {
-//        List<String> lines = new ArrayList<>();
-//        try {
-//            lines = Files.readAllLines(Paths.get("src/main/resources/country-list.txt"));
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        for (String line : lines) {
-//            String[] e = line.split(",");
-//            try {
-//                IBANCountries.put(e[1].toUpperCase(), new IBANCountry(e[0], e[1], e[2], e[3], e[4], e[5]));
-//            } catch (InputMismatchException ex) {
-//                System.err.print(ex.getMessage() + " ");
-//                System.err.println(line + " will not be added to IBAN countries list!");
-//            }
-//        }
-//    }
 
     public IBANNumberValidator() {
         List<String> lines = new ArrayList<>();
@@ -73,7 +57,7 @@ public class IBANNumberValidator {
         lines.add("Liechtenstein,LI,21,\\d{5}\\w{12},LI21088100002324013AA,yes");
         lines.add("Lithuania,LT,20,\\d{5}\\d{11},LT121000011101001000,yes");
         lines.add("Luxembourg,LU,20,\\d{3}\\w{13},LU280019400644750000,yes");
-        lines.add("Latvia,LV,21,U04A13[A-z]{4}\\w{13},LV80BANK0000435195001,yes");
+        lines.add("Latvia,LV,21,[A-z]{4}\\w{13},LV80BANK0000435195001,yes");
         lines.add("Monaco,MC,27,\\d{5}\\d{5}\\w{11}\\d{2},MC5811222000010123456789030,yes");
         lines.add("Moldova,MD,24,\\w{2}\\w{18},MD24AG000225100013104168,no");
         lines.add("Montenegro,ME,22,\\d{3}\\d{13}\\d{2},ME25505000012345678951,no");
@@ -115,10 +99,6 @@ public class IBANNumberValidator {
                 System.err.println(line + " will not be added to IBAN countries list!");
             }
         }
-    }
-
-    public Map<String, IBANCountry> getIBANCountries() {
-        return IBANCountries;
     }
 
     @Override

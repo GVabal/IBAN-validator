@@ -16,28 +16,12 @@ public class IBANCountry {
         this.sepa = sepa.equals("yes");
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getSymbol() {
-        return symbol;
-    }
-
     public Integer getLength() {
         return length;
     }
 
     public String getStructure() {
         return structure;
-    }
-
-    public String getExample() {
-        return example;
-    }
-
-    public boolean isSepa() {
-        return sepa;
     }
 
     @Override
