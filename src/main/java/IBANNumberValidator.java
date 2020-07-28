@@ -51,7 +51,7 @@ public class IBANNumberValidator {
         lines.add("Italy,IT,27,[A-z]{1}\\d{5}\\d{5}\\w{12},IT60X0542811101000000123456,yes");
         lines.add("Jordan,JO,30,[A-z]{4}\\d{4}\\w{18},JO94CBJO0010000000000131000302,no");
         lines.add("Kuwait,KW,30,[A-z]{4}\\w{22},KW81CBKU0000000000001234560101,no");
-        lines.add("Kazakhstan,KZ,20,F03A13\\d{3}\\w{13},KZ86125KZT5004100100,no");
+        lines.add("Kazakhstan,KZ,20,\\d{3}\\w{13},KZ86125KZT5004100100,no");
         lines.add("Lebanon,LB,28,\\d{4}\\w{20},LB62099900000001001901229114,no");
         lines.add("Saint Lucia,LC,32,[A-z]{4}\\w{24},LC55HEMM000100010012001200023015,no");
         lines.add("Liechtenstein,LI,21,\\d{5}\\w{12},LI21088100002324013AA,yes");
@@ -69,7 +69,7 @@ public class IBANNumberValidator {
         lines.add("Norway,NO,15,\\d{4}\\d{6}\\d{1},NO9386011117947,yes");
         lines.add("Pakistan,PK,24,[A-z]{4}\\w{16},PK36SCBL0000001123456702,no");
         lines.add("Poland,PL,28,\\d{8}\\d{16},PL61109010140000071219812874,yes");
-        lines.add("Palestine,PS,29,U04A21[A-z]{4}\\w{21},PS92PALS000000000400123456702,no");
+        lines.add("Palestine,PS,29,[A-z]{4}\\w{21},PS92PALS000000000400123456702,no");
         lines.add("Portugal,PT,25,\\d{4}\\d{4}\\d{11}\\d{2},PT50000201231234567890154,yes");
         lines.add("Qatar,QA,29,[A-z]{4}\\w{21},QA58DOHB00001234567890ABCDEFG,no");
         lines.add("Romania,RO,24,[A-z]{4}\\w{16},RO49AAAA1B31007593840000,yes");
